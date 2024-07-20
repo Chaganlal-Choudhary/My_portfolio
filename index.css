@@ -15,12 +15,13 @@ body {
   left: 0px;
   width: 100%;
   height: 60px;
+  font-weight: 500px;
   padding: 20px 7% 0px 7%;
   background: transparent;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  background: #317ed1;
+  align-items: center;
+  background: black;
   z-index: 100;
 }
 
@@ -29,13 +30,17 @@ body {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 900;
   /* transition: 0.3s; */
   cursor: default;
-  transition: 0.5s;
+  transition: 0.3s;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
+}
+.logo:hover{
+  color: rgb(214, 95, 198);
+  font-size:28px;
 }
 
 .navbar a {
@@ -45,7 +50,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   margin-left: 50px;
-  transition: 0.5s;
+  transition: 0.3s;
   opacity: 0;
   animation: slideDown 1s ease forwards;
 }
@@ -62,7 +67,7 @@ body {
 }
 
 .navbar a:hover {
-  color: rgb(16, 223, 237);
+  color:  rgb(214, 95, 198);
   font-weight: 500;
 }
 
@@ -71,7 +76,7 @@ body {
   width: 100%;
   justify-content: space-between;
   height: auto;
-  background-color: #317ed1;
+  background-color:black;
   display: flex;
   align-items: center;
   padding: 70px 7% 0;
@@ -94,14 +99,14 @@ body {
 }
 
 .home-content h3 span {
-  color: #0ef;
+  color: rgb(214, 95, 198);
 }
 
 .home-content h1 {
   font-size: 40px;
   font-weight: 700;
   margin: -3px 0;
-  color: rgb(240, 231, 172);
+  color: rgb(214, 95, 198);
   transition: 0.5s ease;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -132,41 +137,42 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid rgb(214, 95, 198) ;
   border-radius: 50%;
   font-size: 20px;
-  color: rgb(16, 206, 220);
+  color: rgb(214, 95, 198);
   /* color: #0b1720; */
   text-decoration: none;
   margin: 30px 15px 30px 0px;
   opacity: 0;
-  transition: 0.1s;
+  transition: 0.2s;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.05s * var(--i));
 }
 
 .home-sci a:hover {
   /* content: attr(data-tooltip); */
-  background: rgb(9, 227, 243);
+  background: rgb(214, 95, 198);
   color: #0b1720;
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px rgb(214, 95, 198);
 }
 
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
-  background: #0ef;
+  background: black;
+  border: 2px solid rgb(214, 95, 198);
   border-radius: 40px;
   font-size: 16px;
-  color: #081b29;
+  color: rgb(214, 95, 198);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   animation: slideUp 1s ease forwards;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
-  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgb(214, 95, 198), 0 0 5px rgb(214, 95, 198);
+  margin-bottom: 25px;
   /* animation-delay: calc(1s * var(--i)); */
 }
 
@@ -182,8 +188,8 @@ body {
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px rgb(214, 95, 198), 0 0 rgb(214, 95, 198), 0 0 50px rgb(214, 95, 198), 0 0 40px rgb(214, 95, 198),
+    0 0 2px rgb(214, 95, 198);
 }
 
 .image1 {
@@ -415,15 +421,21 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
+  right: 15px;
+  background-color:#fff;
+  color: black;
   border: none;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 2s, color 2s;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 #backToTopBtn:hover {
-  background-color: #555;
+  background-color: rgb(214, 95, 198);
+  color: #fff;
+}
+#activities p a{
+  text-decoration: none;
+  color: greenyellow;
 }
