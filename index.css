@@ -437,7 +437,11 @@ h2 {
   background-color: rgb(214, 95, 198);
   color: #fff;
 }
-p a {
+#activities p a {
+  text-decoration: none;
+  color: greenyellow;
+}
+#projects p a {
   text-decoration: none;
   color: greenyellow;
 }
